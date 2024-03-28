@@ -10,11 +10,6 @@ public class AntiMinecartDupe extends JavaPlugin
     @Override
     public void onEnable()
     {
-        PacketEventListener playerListener = new PacketEventListener(this);
-        getServer().getPluginManager().registerEvents(playerListener, this);
-
-        VehicleEventListener vehicleListener = new VehicleEventListener();
-        getServer().getPluginManager().registerEvent(Event.Type.VEHICLE_MOVE, vehicleListener, Event.Priority.Monitor, this);
     }
 
     @Override
